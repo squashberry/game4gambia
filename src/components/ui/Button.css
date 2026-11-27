@@ -1,0 +1,80 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  transition: transform 120ms ease, background 150ms ease, opacity 150ms ease;
+  white-space: nowrap;
+  touch-action: manipulation;
+  min-height: 44px; /* touch target */
+  font-family: var(--font-sans);
+}
+.btn:active {
+  transform: scale(0.97);
+}
+.btn:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.btn--primary {
+  background: var(--lime);
+  color: #0a0a0a;
+}
+.btn--primary:hover {
+  background: var(--lime-bright);
+}
+
+.btn--secondary {
+  background: var(--card-dark);
+  color: var(--white);
+  border: 1px solid var(--border-dark);
+}
+.btn--secondary:hover {
+  background: #222;
+}
+
+.btn--ghost {
+  background: transparent;
+  color: var(--white);
+}
+.btn--ghost:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.btn--danger {
+  background: var(--status-failed);
+  color: white;
+}
+
+.btn--sm {
+  padding: 0 var(--space-4);
+  font-size: 0.8125rem;
+  min-height: 36px;
+}
+.btn--md {
+  padding: 0 var(--space-5);
+  font-size: 0.9375rem;
+}
+.btn--lg {
+  padding: 0 var(--space-6);
+  font-size: 1rem;
+  min-height: 52px;
+}
+.btn--full {
+  width: 100%;
+}
+
+.btn__spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-top-color: currentColor;
+  border-radius: 50%;
+  animation: spin 600ms linear infinite;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

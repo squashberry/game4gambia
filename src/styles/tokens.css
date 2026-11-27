@@ -1,0 +1,52 @@
+:root {
+  /* Brand */
+  --lime: #a3e635;
+  --lime-bright: #bef264;
+  --lime-dark: #65a30d;
+
+  /* Dark surfaces */
+  --black: #050505;
+  --charcoal: #121212;
+  --card-dark: #1a1a1a;
+  --border-dark: #2a2a2a;
+
+  /* Light surfaces */
+  --white: #ffffff;
+  --grey-50: #fafafa;
+  --grey-100: #f4f4f5;
+  --grey-200: #e4e4e7;
+  --grey-400: #a1a1aa;
+  --grey-600: #52525b;
+  --grey-900: #18181b;
+
+  /* Status */
+  --status-pending: #f59e0b;
+  --status-processing: #3b82f6;
+  --status-delivered: #22c55e;
+  --status-failed: #ef4444;
+  --status-refund: #8b5cf6;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+
+  /* Radii */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Typography */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Space Grotesk', 'Inter', sans-serif;
+
+  /* Safe areas */
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-top: env(safe-area-inset-top, 0px);
+}
